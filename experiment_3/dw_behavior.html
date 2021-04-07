@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_DW_effectBounce(obj,method,effect,direction,distance,mode,times,speed)
+{
+    obj[method](effect, { direction:direction,distance:distance,mode:mode,times:times}, speed);
+}
+function MM_DW_effectBlind(obj,method,effect,dir,speed)
+{
+    obj[method](effect, { direction: dir}, speed);
+}
+function MM_DW_effectShake(obj,method,effect,direction,distance,times,speed)
+{
+    obj[method](effect, {direction:direction,distance:distance,times:times}, speed);
+}
+</script>
+</head>
+	<style type="text/css">
+	#apDiv1{
+    position: absolute;
+    width: 727px;
+    height: 533px;
+    z-index: 1;
+    left: 337px;
+    top: 66px;
+		}
+	
+	</style>
+	
+<style>
+body 
+{
+  background-color: lightcyan;
+	}
+h1 {
+  color: antiquewhite;
+  text-align: center;
+}
+p {
+  color: chocolate;
+  font-family: verdana;
+  font-size: 30px;}	
+
+
+</style>
+<body>
+	
+	<h1 style="background-color:DodgerBlue;" >南京理工大学</h1>
+	<p>戳一戳字和图片</p>
+<div class="1" onClick="MM_DW_effectBounce($(this),'effect','bounce','up',20,'hide',5,1000)" >南京理工大学信息管理系</div>
+
+	
+<div id="apDiv1" onClick="MM_DW_effectShake($(this),'effect','shake','left',20,3,1000)"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fq_70%2Cc_zoom%2Cw_640%2Fimages%2F20190920%2Fd9e053c923fe47d987028c0cba5f038a.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1620387999&t=75f12f70e6941dcf9ca1ab674104257e
+	" width="707" height="528" alt=""/></div>
+</body>
+</html>
