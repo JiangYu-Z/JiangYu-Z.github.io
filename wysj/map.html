@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<!--引入echarts.js文件-->
+	<script src="lib/echarts.min.js"></script>
+    <script src="lib/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<!--呈现地图盒子-->
+ <div style="width:auto;height: auto"></div>
+ <script>
+		//决定地图最终位置,初始实例对象
+	var mcharts = echarts.init(document.querySelector("div"))
+	$.get('json/map/china.json',function(ret){
+		//console.log(ret)
+		echarts.registermap('chinamap',ret)
+		var option = {
+		geo:{
+			type:'map',
+			map:'chinamap'
+		}
+	}
+	mcharts.setoption(option)
+	})
+	
+ </script>
+
+</body>
+</html>
