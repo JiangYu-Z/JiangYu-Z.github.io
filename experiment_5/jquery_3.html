@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+  
+     $("#div1").fadeIn("slow");
+    $("#div2").fadeIn("slow");
+    $("#div3").fadeIn("slow");
+     $("#div1").fadeOut("slow");
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut("slow");
+    
+  });
+});
+</script>
+</head>
+
+<body>
+<button>check</button>
+<br><br>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:#DB4E35;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:#DB4E35;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:#DB4E35;"></div>
+</body>
+</html>
